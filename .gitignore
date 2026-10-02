@@ -1,2 +1,10 @@
 site.tar.gz
 stage/
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
+data/*.before-*.json
+data/*.tmp
+.openai/

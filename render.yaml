@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: local-life-index
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATA_GO_KR_SERVICE_KEY
+        sync: false
+      - key: KAKAO_JAVASCRIPT_KEY
+        sync: false

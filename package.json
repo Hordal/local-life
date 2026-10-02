@@ -1,0 +1,14 @@
+{
+  "name": "local-life-index",
+  "version": "0.1.0",
+  "private": true,
+  "engines": { "node": "24.x" },
+  "description": "개인 우선순위 기반 시군구 생활환경 분석 서비스",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "benchmark:prepare": "node prepare-benchmark.js",
+    "test": "node benchmark.test.js && node benchmark-core.test.js",
+    "test:deployment": "node deployment.test.js"
+  }
+}
